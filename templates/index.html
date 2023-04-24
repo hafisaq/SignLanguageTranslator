@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Language Convertor</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Sign Language Convertor</h1>
+  <div class="video-container">
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+  </div>
+  <div class="prediction-container">
+    <p>Current Prediction: <span id="prediction"></span></p>
+    <p>Confirmed Predictions: <span id="confirmed-predictions"></span></p>
+    <button id="confirm-prediction">Confirm Prediction</button>
+    <button id="clear-prediction">Clear Predictions</button>
+  </div>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
